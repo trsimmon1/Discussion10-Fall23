@@ -95,7 +95,5 @@ if __name__ == "__main__":
     # You can comment this out to test with just the main function,
     # But be sure to uncomment it and test that you pass the unittests before you submit!
     unittest.main(verbosity=2)
-    # You can comment this out to test with just the main function,
-    # But be sure to uncomment it and test that you pass the unittests before you submit!
-    unittest.main(verbosity=2)
+
 
