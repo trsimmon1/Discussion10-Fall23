@@ -41,6 +41,18 @@ def get_longest_movie(data):
 
     pass
 
+def get_rotten_tomatoes(data):
+    """Returns a list of movies with Rotten Tomatoes rating between
+       95% and 100% inclusive
+       
+    Parameters:
+        data(dict): dict representations of a decoded JSON document
+
+    Returns:
+        list: list of titles with Rotten Tomatoes rating between
+        95% and 100% inclusive
+    """
+    pass
 
 def main():
     pass
@@ -68,11 +80,21 @@ class TestDiscussion11(unittest.TestCase):
 
         self.assertEqual(get_longest_movie(self.movies), "Inception")
 
+    def test_get_rotten_tomatoes(self):
+
+        self.assertEqual(get_rotten_tomatoes(self.movies), ['The Terminator', 'Monsters, Inc.', 'Inside Out', 
+                                                            'My Neighbor Totoro', 'Coco', 'WALL·E', 
+                                                            'Aladdin', 'Up', 'Moana', 'Toy Story', 
+                                                            'Toy Story 2', 'Toy Story 3', 'Parasite'])
+
 
 
 
 if __name__ == "__main__":
     main()
+    # You can comment this out to test with just the main function,
+    # But be sure to uncomment it and test that you pass the unittests before you submit!
+    unittest.main(verbosity=2)
     # You can comment this out to test with just the main function,
     # But be sure to uncomment it and test that you pass the unittests before you submit!
     unittest.main(verbosity=2)
